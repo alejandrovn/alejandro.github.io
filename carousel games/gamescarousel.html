@@ -1,37 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./style/estilo_p.css">
-</head>
-<body>
-
-<div class="container">
-  <h2>Carousel Example</h2>  
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+<body style="background-color: #ccc;">
+<div height="100%" width="100%" class="container" >
+  <h2 align="center">Games</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
     <div class="carousel-inner">
 	
 		<div class="item active">
-			<iframe id="carousel" src="./gamescarousel_sub1.html" ></iframe> 
+			<iframe frameborder="0" scrolling="no" onload="resizeIframe(this)" height="100%" width="100%" class="carousel" src="./gamescarousel_sub1.html" ></iframe> 
 		</div>
 
 		<div class="item">
-			<iframe id="carousel" src="./gamescarousel_sub2.html" ></iframe> 
-		</div>
-			
-		<div class="item">
-			<iframe id="carousel" src="./gamescarousel_sub3.html" ></iframe> 
+			<iframe frameborder="0" scrolling="no" onload="resizeIframe(this)" height="100%" width="100%" class="carousel" src="./gamescarousel_sub2.html" ></iframe> 
 		</div>
 		
     </div>
@@ -46,10 +39,4 @@
     </a>
   </div>
 </div>
-
-
-
-</div>
-
 </body>
-</html>

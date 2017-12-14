@@ -1,23 +1,28 @@
 <html code="utf-8" lang="en">
 <head>
-<title>Marco Valentín Portfolio</title>
-<link rel="stylesheet" type="text/css" href="./style/estilo_p.css">
+	<title>Marco Valentín Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="./style/estilo_p.css">
+	<script>
+	  function resizeIframe(obj) {
+		obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+	  }
+	</script>
 </head>
 <body style="background-color: #0F0F0F;">
-<div id="divp">
-<div id="nom">
-<h1>Marco Alejandro Valentín Negrín</h1>
-<font style="font-style: italic;">Game Programmer</font>
-</div>
-<div class="a1">
-  <a href="./index.html">HOME</a>
-  <a style="color: #e4741f;" href="./games.html">GAMES</a>
-  <a href="./sideprojects.html">SIDE PROJECTS</a>
-  <a href="./contact.html">CONTACT</a>
-</div>
-<div id="cont">
-<iframe id="carousel" src="./carousel games/gamescarousel.html" height="100%" width="100%" ></iframe> 
-</div>
-</div>
+	<div id="divp">
+		<div id="nom">
+			<h1>Marco Alejandro Valentín Negrín</h1>
+			<font style="font-style: italic;">Game Programmer</font>
+		</div>
+		<div class="a1">
+		  <a href="./index.html">HOME</a>
+		  <a style="color: #e4741f;" href="./games.html">GAMES</a>
+		  <a href="./sideprojects.html">SIDE PROJECTS</a>
+		  <a href="./contact.html">CONTACT</a>
+		</div>
+		<div id="cont">
+			<iframe frameborder="0" scrolling="no" onload="resizeIframe(this)" class="carousel" src="./carousel games/gamescarousel.html" height="100%" width="100%" ></iframe> 
+		</div>
+	</div>
 </body>
 </html>
