@@ -40,10 +40,21 @@
 
 	border-color: #333;
 }
-.container {
-	
-	width: 100px;
+1
+.carousel slide {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
+.cont {
+   position: relative;
+   padding-bottom: 56.25%;
+   overflow: hidden;
+}
+
 
 .titulo_paginas {
 font-size: 20;
