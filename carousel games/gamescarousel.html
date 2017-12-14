@@ -1,42 +1,70 @@
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./style/estilo_p.css">
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
+	<head>
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		  <link rel="stylesheet" type="text/css" href="./style/estilo_p.css">
+	</head>
 <body style="background-color: #ccc;">
-<div height="100%" width="100%" class="container" >
-  <h2 align="center">Games</h2>  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<div id="container" > 
+		
+		<div class="container">
+		  <h2 align="center">Fallrim</h2>  
+		  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+			  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel" data-slide-to="1"></li>
+			</ol>
+
+			<div class="carousel-inner">
+			  <div class="item active">
+				<img src="../img/menu_juego.jpg" style="width:100%;">
+			  </div>
+			  
+			  <div class="item">
+				<img src="../img/eleccion_juego.jpg" style="width:100%;">
+			  </div>
+			  
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		  </div>
+		  </div>
+		</div>
+
+<div class="container">
+  <h2 align="center">sub2</h2>  
+  <div id="myCarousel2" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel2" data-slide-to="1"></li>
     </ol>
 
     <div class="carousel-inner">
-	
-		<div class="item active">
-			<iframe frameborder="0" scrolling="no" onload="resizeIframe(this)" height="100%" width="100%" class="carousel" src="./gamescarousel_sub1.html" ></iframe> 
-		</div>
+      <div class="item active">
+        <img src="../img/combate1.jpg" style="width:100%;">
+      </div>
 
-		<div class="item">
-			<iframe frameborder="0" scrolling="no" onload="resizeIframe(this)" height="100%" width="100%" class="carousel" src="./gamescarousel_sub2.html" ></iframe> 
-		</div>
-		
+      <div class="item">
+        <img src="../img/combate2.jpg" style="width:100%;">
+      </div>
     </div>
 
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
   </div>
 </div>
+			
+	</div>
 </body>

@@ -40,8 +40,11 @@
 
 	border-color: #333;
 }
-.container
- {
-	background-color: #ccc;
+.container {
+	
+	width: 100px;
 }
 
+.titulo_paginas {
+font-size: 20;
+}
